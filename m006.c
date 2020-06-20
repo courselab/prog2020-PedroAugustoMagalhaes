@@ -1,4 +1,4 @@
-OK
+
 /* m006.c - Cross product.
 
    This program reads the coordinates of two 3-dimensional
