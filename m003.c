@@ -23,7 +23,7 @@
 
 int is_prime (int a)
 {
-  return 0;
+
 }
 
 #define USAGE "m003 <num>\n"

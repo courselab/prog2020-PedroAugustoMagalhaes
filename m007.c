@@ -26,9 +26,24 @@
 
 /* Count the number of letters in string s.*/
 
-int lettercount (char *s)
+int lettercount (char s[MAX])
 {
-  return 0;
+  int count;
+  int i;
+  i = 0;
+  while (s[i] =! 0)
+  {
+    if (s[i] <= 'z' && s[i] >= 'A')
+    {
+      count = count + 1;
+    }
+    else 
+    {
+      count = count + 0;
+    }
+    i = i + 1;
+  }
+ return count;
 }
 
 

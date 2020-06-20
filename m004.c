@@ -29,8 +29,6 @@
 
 int decimal (char *b)
 {
-  
-  return 0;
 }
 
 #define USAGE "m004 <string>\n"
