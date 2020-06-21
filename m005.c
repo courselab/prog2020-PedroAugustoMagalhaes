@@ -1,4 +1,4 @@
-OK
+
 /* m005.c - Determinant.
 
    This program reads the integer coefficients of a 3x3 matrix

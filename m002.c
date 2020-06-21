@@ -1,4 +1,4 @@
-OK
+
 /* m002.c - Sort three variables.
 
    This program takes three integers read as command 

@@ -29,6 +29,40 @@
 
 int decimal (char *b)
 {
+  int i;
+  int count=0;
+  int n = strlen(b);
+  for(i = n-1; i >= 0; i--)
+  {
+    switch(i)
+    {
+      case 3:
+        if (b[i]=='0')
+          count = count + 0*1;
+        else 
+          count = count + 1*1;
+      break;
+      case 2:
+        if (b[i]=='0')
+          count = count + 0*2;
+        else 
+          count = count + 1*2;
+      break;
+      case 1:
+        if (b[i]=='0')
+          count = count + 0*4;
+        else 
+          count = count + 1*4;
+      break;
+      case 0:
+        if (b[i]=='0')
+          count = count + 0*8;
+        else 
+          count = count + 1*8;
+      break;
+    }
+  }
+  return count;
 }
 
 #define USAGE "m004 <string>\n"
