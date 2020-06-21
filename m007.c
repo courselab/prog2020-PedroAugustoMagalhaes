@@ -38,7 +38,7 @@ int lettercount (char *s)
     else
     count = count + 1;
   }
-  return count;
+  return count - 1;
 }
 
 
