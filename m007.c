@@ -26,22 +26,21 @@
 
 /* Count the number of letters in string s.*/
 
-int lettercount (char s[MAX])
+int lettercount (char *s)
 {
-  /*
+  int count;
+  int n = strlen(s);
   int i;
-  i = 0;
-  while(s[i]!= 0)
+  for(i=0; s[i] != '\0'; i++)
   {
-    if(s[i]==32)
-    i = i;
+    if(s[i] == ' ')
+    count = count + 0;
     else
-    i++;
-
+    count = count + 1;
   }
-  return i;
+  return count - 1;
 }
-*/
+
 
 /* Do not edit this function. */
 
