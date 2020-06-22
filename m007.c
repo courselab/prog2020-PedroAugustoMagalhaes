@@ -33,12 +33,12 @@ int lettercount (char *s)
   int i;
   for(i=0; s[i] != '\0'; i++)
   {
-    if(s[i] == ' ')
-    count = count + 0;
-    else
+    if(s[i] >= 'A' && s[i]<= 'z')
     count = count + 1;
+    else
+    count = count + 0;
   }
-  return count - 1;
+  return count;
 }
 
 
