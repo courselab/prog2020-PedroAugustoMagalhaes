@@ -29,7 +29,45 @@ enum {sun, mon, tue, wed, thu, fri, sat};
    Sunday=0, Monday=1... Saturday=6.*/
 
 int day_of_week (int day, int month)
-{  
+{
+  int b;
+  int a = 0;
+  int i = 0;
+  int v[14] = {0, 31, 29, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31, 0};
+  if(month >= 1 && month <= 12 && day <= v[month])
+  {
+    for(i = 0; i <= month - 1; i++)
+    {
+      a = a + v[i];
+    }
+    b = a + day;
+    switch(b % 7)
+    {
+      case 0:
+       return tue;
+       break;
+      case 1:
+       return wed;
+       break;
+      case 2:
+       return thu;
+       break;
+      case 3:
+       return fri;
+       break;
+      case 4:
+       return sat;
+       break;
+      case 5:
+       return sun;
+       break;
+      case 6:
+       return mon;
+       break;  
+    }
+  }
+  else 
+  return 8;
 }
 
 /* Do not edit function main. */
@@ -45,8 +83,8 @@ int main (int argc, char **argv)
       exit(1);
     }
   
-  day = atoi(argv[1]);
-  month = atoi(argv[2]);
+  month = atoi(argv[1]);
+  day = atoi(argv[2]);
 
   dweek = day_of_week (day, month);
   
