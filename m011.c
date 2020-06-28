@@ -28,7 +28,19 @@
 
 int wordcount (char *filename)
 {
-  return 0;
+  FILE *fp;
+  int count = 0;
+  int n;
+  fp = fopen (filename, "r");
+  n = fgetc(fp);
+  while (n != EOF)
+  {
+    if (n == ' ')
+    count = count + 1;
+    else 
+    count = count + 0;
+  }
+  return count;
 }
 
 /* Do not edit function main. */

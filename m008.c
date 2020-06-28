@@ -22,6 +22,7 @@
 
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 
 #define MAX 256
 
@@ -30,11 +31,37 @@
 
 void lastname (char *s)
 {
- 
+  int b = 0;
+  int i;
+  char ultimo[MAX];
+  char resto[MAX];
+  char finish[MAX];
+
+  int a = strlen(s) - 2;
+  while (s[a] != 32)
+  {
+    i = a - 1;
+    a--;
+  }
+  for(a = i + 1; s[a + 1] != 0; a++)
+  {
+    ultimo[b] = s[a];
+    if (ultimo[b]<= 'z' && ultimo[b]>= 'a')
+    {
+      ultimo[b] = ultimo[b] - 32;
+    }
+    b++;
+  }
+  for(a = 0; a<i; a++)
+  {
+    resto[a] = s[a];
+  }
+  strcat(finish, ultimo);
+  strcat(finish, ", ");
+  strcat(finish, resto);
+
+  strcpy(s, finish);
 }
-
-
-
 
 /* Do not edit this function. */
 
