@@ -1,5 +1,5 @@
 /* m003.c - Check if a positive integer is prime.
-
+ok
    This program takes a non-zero positive integer read as a 
    command line argument and outputs 1 or 0 depending on
    whether the number is prime or not.

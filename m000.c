@@ -1,5 +1,6 @@
 /* m000.c - Pitagorean name number
 
+
    This program takes the a person's full name read as a string from 
    from the standard input and output its Pitagorean Number as shown 
    in reference [1] at the bottom of this source file.

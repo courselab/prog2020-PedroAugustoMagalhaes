@@ -1,5 +1,5 @@
 /* m010.c - Day of the week.
-
+ok
    This program takes two integers read as command line arguments
    representing, respectively, the day and the month of a date in
    year 2020, and produces as output the corresponding day of the week.

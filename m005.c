@@ -1,6 +1,6 @@
 
 /* m005.c - Determinant.
-
+ok
    This program reads the integer coefficients of a 3x3 matrix
    and outputs the matrix's determinant. Matrix coefficients
    are read from standard input one line at a time, in the form

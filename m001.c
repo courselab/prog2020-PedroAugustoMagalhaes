@@ -1,5 +1,6 @@
 
 /* m001.c - Greatest of two.
+ok
 
    This program takes three integers read as command 
    line arguments and outputs the greatest among them.

@@ -1,5 +1,5 @@
 /* m004.c - Binary to decimal.
-
+ok
    This program takes a string read as a command line argument and,
    interpreting it as a positive binary integer, outputs its 
    corresponding value in decimal base.

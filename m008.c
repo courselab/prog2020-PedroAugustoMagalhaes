@@ -1,5 +1,5 @@
 /* m008.c - Lastname-Names.
-
+ok
    This program reads the name of a person from the standard input
    in the form 'First-name middle-names last-name' and outputs the 
    name in the form 'LAST-NAME, first-name middle-names'.

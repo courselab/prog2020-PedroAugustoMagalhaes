@@ -1,5 +1,5 @@
 /* m009.c - Sort vector.
-
+ok
    This program reads N<=100 numbers passed as command line
    arguments and ouputs them in ascending order. Choose the
    sorting algorithm of your preference (see bellow).

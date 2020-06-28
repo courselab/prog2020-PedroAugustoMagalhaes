@@ -1,5 +1,5 @@
 /* m007.c - Number of letters.
-
+ok
    This program reads the name of a person from the standard input
    and outputs the number of letters contained in the name (excluding
    blanks and punctuation). The name should be entered using only

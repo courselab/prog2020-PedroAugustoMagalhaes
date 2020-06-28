@@ -1,6 +1,6 @@
 
 /* m002.c - Sort three variables.
-
+ok
    This program takes three integers read as command 
    line arguments and outputs them in ascending order.
 
