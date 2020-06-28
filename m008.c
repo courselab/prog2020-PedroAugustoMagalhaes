@@ -33,9 +33,9 @@ void lastname (char *s)
 {
   int b = 0;
   int i;
-  char ultimo[MAX];
-  char resto[MAX];
   char finish[MAX];
+  strcpy(finish, s);
+  
 
   int a = strlen(s) - 2;
   while (s[a] != 32)
@@ -43,26 +43,23 @@ void lastname (char *s)
     i = a - 1;
     a--;
   }
-  for(a = i + 1; s[a + 1] != 0; a++)
+  for(a = i + 1; finish[a + 1] != 0; a++)
   {
-    ultimo[b] = s[a];
-    if (ultimo[b]<= 'z' && ultimo[b]>= 'a')
+    s[b] = finish[a];
+    if (s[b]<= 'z' && s[b]>= 'a')
     {
-      ultimo[b] = ultimo[b] - 32;
+      s[b] = s[b] - 32;
     }
     b++;
   }
-  for(a = 0; a<i; a++)
+  s[b] = ',';
+  s[b+1] = ' ';
+  for(a = 0; a<=i; a++)
   {
-    resto[a] = s[a];
+    s[b+2] = finish[a];
+    b++;
   }
-  strcat(finish, ultimo);
-  strcat(finish, ", ");
-  strcat(finish, resto);
-
-  strcpy(s, finish);
 }
-
 /* Do not edit this function. */
 
 int main (int argc, char **argv)
