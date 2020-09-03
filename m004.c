@@ -1,5 +1,5 @@
 /* m004.c - Binary to decimal.
-
+ok
    This program takes a string read as a command line argument and,
    interpreting it as a positive binary integer, outputs its 
    corresponding value in decimal base.
@@ -29,8 +29,52 @@
 
 int decimal (char *b)
 {
-  
-  return 0;
+  int i;
+  int count=0;
+  int n = strlen(b);
+  for(i = n-1; i >= 0; i--)
+  {
+    switch(n-i-1)
+    {
+      case 0:
+        if (b[i]=='0')
+          count = count + 0*1;
+        else 
+          count = count + 1*1;
+      break;
+      case 1:
+        if (b[i]=='0')
+          count = count + 0*2;
+        else 
+          count = count + 1*2;
+      break;
+      case 2:
+        if (b[i]=='0')
+          count = count + 0*4;
+        else 
+          count = count + 1*4;
+      break;
+      case 3:
+        if (b[i]=='0')
+          count = count + 0*8;
+        else 
+          count = count + 1*8;
+      break;
+      case 4:
+        if (b[i]=='0')
+          count = count + 0*16;
+        else 
+          count = count + 1*16;
+      break;
+      case 5:
+        if (b[i]=='0')
+          count = count + 0*32;
+        else 
+          count = count + 1*32;
+      break;
+    }
+  }
+  return count;
 }
 
 #define USAGE "m004 <string>\n"

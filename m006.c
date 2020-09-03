@@ -1,5 +1,6 @@
-/* m006.c - Cross product.
 
+/* m006.c - Cross product.
+ok
    This program reads the coordinates of two 3-dimensional
    integer vectors and outputs their cross (vector) product. 
    Vectors' coordinates are read as blank-separate real
@@ -28,8 +29,10 @@
 
 void crossprod (int a[3], int b[3], int c[3])
 {
+  c[0] = a[1]*b[2] - a[2]*b[1];
+  c[1] = a[2]*b[0] - a[0]*b[2];
+  c[2] = a[0]*b[1] - a[1]*b[0];
 }
-
 
 
 /* Do not edit this function. */

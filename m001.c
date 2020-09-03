@@ -1,4 +1,6 @@
+
 /* m001.c - Greatest of two.
+ok
 
    This program takes three integers read as command 
    line arguments and outputs the greatest among them.
@@ -24,7 +26,17 @@
 
 int greatest (int a, int b, int c)
 {
-  return a;
+  int maior;
+  maior = a;
+  if(b>=maior)
+  {
+    maior = b;
+  }
+  if (c>= maior)
+  {
+    maior = c;
+  }
+  return maior;
 }
 
 /* Do not edit this function. */

@@ -1,5 +1,5 @@
 /* m009.c - Sort vector.
-
+ok
    This program reads N<=100 numbers passed as command line
    arguments and ouputs them in ascending order. Choose the
    sorting algorithm of your preference (see bellow).
@@ -25,6 +25,16 @@
 
 void sort (int* vector, int n)
 {
+  int a, b, valor;
+  for (a = 1; a < n; a++)
+  {
+    valor = vector[a];
+    for(b = a -1; b >= 0 && vector[b] > valor; b--)
+    {
+      vector [b+1] = vector[b];
+    }
+    vector[b+1] = valor;
+  }
 }
 
 #define USAGE "m009 <num1> <nun2> ... \n"

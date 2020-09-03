@@ -1,5 +1,6 @@
-/* m005.c - Determinant.
 
+/* m005.c - Determinant.
+ok
    This program reads the integer coefficients of a 3x3 matrix
    and outputs the matrix's determinant. Matrix coefficients
    are read from standard input one line at a time, in the form
@@ -27,7 +28,10 @@
 
 int determinant (int m[3][3])
 {
-  return 0;
+  int a;
+  a = m[0][0]* m[1][1]* m[2][2] + m[1][0]*m[2][1]*m[0][2]+ m[2][0]*m[0][1]*m[1][2]-m[0][2]*m[1][1]*m[2][0]-m[1][2]*m[2][1]*m[0][0]-m[2][2]*m[0][1]*m[1][0];
+  
+  return a;
 }
 
 
@@ -40,7 +44,6 @@ int main (int argc, char **argv)
   int det;
   
   /* Read matrix lines. */
-  
   scanf ("%d %d %d", &a[0][0], &a[0][1], &a[0][2]);
   scanf ("%d %d %d", &a[1][0], &a[1][1], &a[1][2]);
   scanf ("%d %d %d", &a[2][0], &a[2][1], &a[2][2]);
